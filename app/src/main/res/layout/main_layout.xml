@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_classname"
+        android:padding="25dp"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_marginTop="42dp"
+        android:padding="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_sub_name"
+        android:layout_below="@+id/spinner_classname"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:padding="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_lecture_name"
+        />
+
+    <Button
+        android:text="Genrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_genrate"
+       android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+     android:layout_gravity="center"
+        android:layout_marginBottom="62dp"
+
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textViewtimer"
+        android:layout_below="@+id/spinner_lecture_name"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>
+

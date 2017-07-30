@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+ >
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_sname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:shadowColor="#cccccc"
+            android:hint="Enter subject name"
+            android:layout_below="@+id/input_layout_fname"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="37dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <EditText
+            android:id="@+id/input_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:shadowColor="#483C32"
+            android:hint="Enter student name"
+            android:layout_below="@+id/input_layout_sname"
+            android:layout_alignParentStart="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ProgressBar
+
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:progressDrawable="@drawable/circular_progress"
+            android:layout_gravity="center"
+      />
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/butooncal"
+        android:layout_gravity="center"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+     />
+    <Button
+        android:text="EMAIL"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_email_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listvietemp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/progressBar" />
+
+
+
+</LinearLayout>
